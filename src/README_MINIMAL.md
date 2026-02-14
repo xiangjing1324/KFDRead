@@ -10,6 +10,12 @@
 - `supports/Entitlements.plist`：YuanBao 同款权限
 - `libjailbreak.dylib` / `libchoma.dylib`：运行依赖
 
+目录约定：
+
+- `src/`：所有源码与构建脚本
+- `src/supports/Entitlements.plist`：默认签名权限
+- `packages/`：`Command+B` 输出 `.tipa`
+
 ## 为什么必须 `-kfdread`
 
 是必须的。按钮点击后会 `posix_spawn` 拉起同一个可执行文件的新进程，
@@ -20,3 +26,12 @@ KFD 初始化在这个子进程里执行，主进程只负责 UI 和启动流程
 
 - 目标进程名：`ViewController.m` 里的 `kTargetName`
 - 产物路径：`packages/KFDRead_*.tipa`
+
+## TestKFD 是否可直接跑
+
+可以。建议直接 `git clone` 本仓库后在现有工程改：
+
+- `PRODUCT_BUNDLE_IDENTIFIER`
+- `PRODUCT_NAME`（可改成 `TestKFD`）
+
+不建议“新建空工程再覆盖”，那样容易漏掉 `project.pbxproj` 里的 Run Script、资源与编译设置。
