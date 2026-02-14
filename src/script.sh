@@ -10,6 +10,7 @@ fi
 : "${CODESIGNING_FOLDER_PATH:?CODESIGNING_FOLDER_PATH is required}"
 : "${SRCROOT:?SRCROOT is required}"
 : "${PRODUCT_NAME:?PRODUCT_NAME is required}"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 APP_DIR=""
 if [[ -d "${TARGET_BUILD_DIR}/${CODESIGNING_FOLDER_PATH}" ]]; then
@@ -30,10 +31,10 @@ fi
 ENT_PATH=""
 if [[ -n "${CODE_SIGN_ENTITLEMENTS:-}" && -f "${SRCROOT}/${CODE_SIGN_ENTITLEMENTS}" ]]; then
   ENT_PATH="${SRCROOT}/${CODE_SIGN_ENTITLEMENTS}"
-elif [[ -f "${SRCROOT}/KFDRead/supports/Entitlements.plist" ]]; then
-  ENT_PATH="${SRCROOT}/KFDRead/supports/Entitlements.plist"
-elif [[ -f "${SRCROOT}/KFDRead/supports/entitlements.plist" ]]; then
-  ENT_PATH="${SRCROOT}/KFDRead/supports/entitlements.plist"
+elif [[ -f "${SCRIPT_DIR}/supports/Entitlements.plist" ]]; then
+  ENT_PATH="${SCRIPT_DIR}/supports/Entitlements.plist"
+elif [[ -f "${SCRIPT_DIR}/supports/entitlements.plist" ]]; then
+  ENT_PATH="${SCRIPT_DIR}/supports/entitlements.plist"
 elif [[ -f "${SRCROOT}/supports/Entitlements.plist" ]]; then
   ENT_PATH="${SRCROOT}/supports/Entitlements.plist"
 elif [[ -f "${SRCROOT}/supports/entitlements.plist" ]]; then
@@ -88,7 +89,7 @@ while IFS= read -r -d '' bin; do
   sign_if_macho "${bin}" || true
 done < <(find "${APP_DIR}" -type f \( -name "*.dylib" -o -path "*/Frameworks/*.framework/*" \) -print0 2>/dev/null || true)
 
-OUT_DIR="${SRCROOT}/KFDRead/packages"
+OUT_DIR="${SRCROOT}/packages"
 OUT_NAME="${PRODUCT_NAME}_${VERSION}_${BUILD_NO}.tipa"
 OUT_PATH="${OUT_DIR}/${OUT_NAME}"
 WORK_DIR="${TARGET_BUILD_DIR}/tipa_payload_tmp"

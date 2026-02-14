@@ -19,8 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5D2C339E2EDC89FA00B07DC1 /* libchoma.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libchoma.dylib; path = KFDRead/libchoma.dylib; sourceTree = "<group>"; };
-		5D2C339F2EDC89FA00B07DC1 /* libjailbreak.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjailbreak.dylib; path = KFDRead/libjailbreak.dylib; sourceTree = "<group>"; };
+		5D2C339E2EDC89FA00B07DC1 /* libchoma.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libchoma.dylib; path = src/libchoma.dylib; sourceTree = "<group>"; };
+		5D2C339F2EDC89FA00B07DC1 /* libjailbreak.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjailbreak.dylib; path = src/libjailbreak.dylib; sourceTree = "<group>"; };
 		5D70781D2EB449F300D71C96 /* KFDRead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFDRead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7078202EB449F300D71C96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5D7078212EB449F300D71C96 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 				7F1000112EDC000100B00001 /* supports */,
 				7F1000042EDC000100B00001 /* README_MINIMAL.md */,
 			);
-			path = KFDRead;
+			path = src;
 			sourceTree = "<group>";
 		};
 		7F1000112EDC000100B00001 /* supports */ = {
@@ -183,7 +183,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/bin/bash \"${SRCROOT}/KFDRead/script.sh\"\n";
+			shellScript = "/bin/bash \"${SRCROOT}/src/script.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -352,7 +352,7 @@
 				DEVELOPMENT_TEAM = RURNM8MZ2U;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KFDRead/Info.plist;
+				INFOPLIST_FILE = src/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -390,7 +390,7 @@
 				DEVELOPMENT_TEAM = RURNM8MZ2U;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KFDRead/Info.plist;
+				INFOPLIST_FILE = src/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
