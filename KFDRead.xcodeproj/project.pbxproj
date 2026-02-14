@@ -19,8 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5D2C339E2EDC89FA00B07DC1 /* libchoma.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libchoma.dylib; path = src/libchoma.dylib; sourceTree = "<group>"; };
-		5D2C339F2EDC89FA00B07DC1 /* libjailbreak.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjailbreak.dylib; path = src/libjailbreak.dylib; sourceTree = "<group>"; };
+		5D2C339E2EDC89FA00B07DC1 /* libchoma.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libchoma.dylib; sourceTree = "<group>"; };
+		5D2C339F2EDC89FA00B07DC1 /* libjailbreak.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjailbreak.dylib; sourceTree = "<group>"; };
 		5D70781D2EB449F300D71C96 /* KFDRead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFDRead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7078202EB449F300D71C96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5D7078212EB449F300D71C96 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,8 +53,6 @@
 		5D7078142EB449F300D71C96 = {
 			isa = PBXGroup;
 			children = (
-				5D2C339E2EDC89FA00B07DC1 /* libchoma.dylib */,
-				5D2C339F2EDC89FA00B07DC1 /* libjailbreak.dylib */,
 				5D70781F2EB449F300D71C96 /* KFDRead */,
 				5D70781E2EB449F300D71C96 /* Products */,
 			);
@@ -71,9 +69,7 @@
 		5D70781F2EB449F300D71C96 /* KFDRead */ = {
 			isa = PBXGroup;
 			children = (
-				5DCDC12D2EDB26E0008CF0B9 /* kfd.mm */,
-				7F1000012EDC000100B00001 /* kfd_c.h */,
-				7F1000022EDC000100B00001 /* YBKFD.hpp */,
+				7F1000122EDC000100B00001 /* kfd */,
 				5D7078202EB449F300D71C96 /* AppDelegate.h */,
 				5D7078212EB449F300D71C96 /* AppDelegate.m */,
 				5D7078262EB449F300D71C96 /* ViewController.h */,
@@ -88,6 +84,18 @@
 				7F1000042EDC000100B00001 /* README_MINIMAL.md */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		7F1000122EDC000100B00001 /* kfd */ = {
+			isa = PBXGroup;
+			children = (
+				5DCDC12D2EDB26E0008CF0B9 /* kfd.mm */,
+				7F1000012EDC000100B00001 /* kfd_c.h */,
+				7F1000022EDC000100B00001 /* YBKFD.hpp */,
+				5D2C339E2EDC89FA00B07DC1 /* libchoma.dylib */,
+				5D2C339F2EDC89FA00B07DC1 /* libjailbreak.dylib */,
+			);
+			path = kfd;
 			sourceTree = "<group>";
 		};
 		7F1000112EDC000100B00001 /* supports */ = {
@@ -347,6 +355,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = src/supports/Entitlements.plist;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RURNM8MZ2U;
@@ -385,6 +394,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = src/supports/Entitlements.plist;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RURNM8MZ2U;

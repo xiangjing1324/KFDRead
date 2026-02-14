@@ -16,7 +16,7 @@
 #import <mach-o/dyld.h>
 
  
-#import "kfd_c.h"     // 纯 C 接口
+#import "kfd/kfd_c.h"     // 纯 C 接口
 static NSString * const kTargetName = @"DeltaForceClient"; // 目标进程名（可按需修改）
 extern char **environ;
 

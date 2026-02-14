@@ -2,17 +2,18 @@
 
 这是最小可用模板，只保留以下核心：
 
-- `kfd.mm`：YuanBao 同款 KFD 初始化与读取链路
-- `YBKFD.hpp`：核心 KFD 工具函数
+- `kfd/kfd.mm`：YuanBao 同款 KFD 初始化与读取链路
+- `kfd/YBKFD.hpp`：核心 KFD 工具函数
 - `main.m`：`-kfdread` 子进程入口
 - `ViewController.m`：按钮触发 + persona 提权拉起子进程
 - `script.sh`：`Command+B` 自动签名并打包 `.tipa`
 - `supports/Entitlements.plist`：YuanBao 同款权限
-- `libjailbreak.dylib` / `libchoma.dylib`：运行依赖
+- `kfd/libjailbreak.dylib` / `kfd/libchoma.dylib`：运行依赖
 
 目录约定：
 
 - `src/`：所有源码与构建脚本
+- `src/kfd/`：KFD 核心代码与动态库（集中管理）
 - `src/supports/Entitlements.plist`：默认签名权限
 - `packages/`：`Command+B` 输出 `.tipa`
 
