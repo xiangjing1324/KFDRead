@@ -2,10 +2,15 @@
 .DS_Store
 
 # Xcode user/local state
-xcuserdata/
+**/xcuserdata/
 *.xcuserstate
 *.xccheckout
 *.moved-aside
+*.xcscmblueprint
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
 
 # Build artifacts
 build/
@@ -13,13 +18,14 @@ DerivedData/
 *.ipa
 *.tipa
 *.dSYM
+*.dSYM.zip
 *.xcarchive
 
-# Local outputs
-packages/
-KFDRead/packages/
-Process/
-supports/
+# Local outputs (repo root)
+/packages/
+/Process/
+/supports/
 
 # Editors
 .vscode/
+.idea/
