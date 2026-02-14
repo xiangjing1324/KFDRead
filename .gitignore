@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+
+# Xcode user/local state
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.moved-aside
+
+# Build artifacts
+build/
+DerivedData/
+*.ipa
+*.tipa
+*.dSYM
+*.xcarchive
+
+# Local outputs
+packages/
+KFDRead/packages/
+Process/
+supports/
+
+# Editors
+.vscode/

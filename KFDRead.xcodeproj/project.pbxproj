@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D2C33A02EDC89FA00B07DC1 /* libchoma.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 5D2C339E2EDC89FA00B07DC1 /* libchoma.dylib */; };
+		5D2C33A12EDC89FA00B07DC1 /* libjailbreak.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 5D2C339F2EDC89FA00B07DC1 /* libjailbreak.dylib */; };
+		5D7078222EB449F300D71C96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7078212EB449F300D71C96 /* AppDelegate.m */; };
+		5D7078282EB449F300D71C96 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7078272EB449F300D71C96 /* ViewController.m */; };
+		5D70782B2EB449F300D71C96 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5D70782A2EB449F300D71C96 /* Base */; };
+		5D70782D2EB449F400D71C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D70782C2EB449F400D71C96 /* Assets.xcassets */; };
+		5D7078302EB449F400D71C96 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5D70782F2EB449F400D71C96 /* Base */; };
+		5D7078332EB449F400D71C96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7078322EB449F400D71C96 /* main.m */; };
+		5DCDC12E2EDB26E0008CF0B9 /* kfd.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDC12D2EDB26E0008CF0B9 /* kfd.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5D2C339E2EDC89FA00B07DC1 /* libchoma.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libchoma.dylib; path = KFDRead/libchoma.dylib; sourceTree = "<group>"; };
+		5D2C339F2EDC89FA00B07DC1 /* libjailbreak.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjailbreak.dylib; path = KFDRead/libjailbreak.dylib; sourceTree = "<group>"; };
+		5D70781D2EB449F300D71C96 /* KFDRead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFDRead.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D7078202EB449F300D71C96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5D7078212EB449F300D71C96 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5D7078262EB449F300D71C96 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5D7078272EB449F300D71C96 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5D70782A2EB449F300D71C96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D70782C2EB449F400D71C96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D70782F2EB449F400D71C96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5D7078312EB449F400D71C96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D7078322EB449F400D71C96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5DCDC12D2EDB26E0008CF0B9 /* kfd.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = kfd.mm; sourceTree = "<group>"; };
+		7F1000012EDC000100B00001 /* kfd_c.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kfd_c.h; sourceTree = "<group>"; };
+		7F1000022EDC000100B00001 /* YBKFD.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = YBKFD.hpp; sourceTree = "<group>"; };
+		7F1000032EDC000100B00001 /* script.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = script.sh; sourceTree = "<group>"; };
+		7F1000042EDC000100B00001 /* README_MINIMAL.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README_MINIMAL.md; sourceTree = "<group>"; };
+		7F1000052EDC000100B00001 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D70781A2EB449F300D71C96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D7078142EB449F300D71C96 = {
+			isa = PBXGroup;
+			children = (
+				5D2C339E2EDC89FA00B07DC1 /* libchoma.dylib */,
+				5D2C339F2EDC89FA00B07DC1 /* libjailbreak.dylib */,
+				5D70781F2EB449F300D71C96 /* KFDRead */,
+				5D70781E2EB449F300D71C96 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D70781E2EB449F300D71C96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D70781D2EB449F300D71C96 /* KFDRead.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D70781F2EB449F300D71C96 /* KFDRead */ = {
+			isa = PBXGroup;
+			children = (
+				5DCDC12D2EDB26E0008CF0B9 /* kfd.mm */,
+				7F1000012EDC000100B00001 /* kfd_c.h */,
+				7F1000022EDC000100B00001 /* YBKFD.hpp */,
+				5D7078202EB449F300D71C96 /* AppDelegate.h */,
+				5D7078212EB449F300D71C96 /* AppDelegate.m */,
+				5D7078262EB449F300D71C96 /* ViewController.h */,
+				5D7078272EB449F300D71C96 /* ViewController.m */,
+				5D7078292EB449F300D71C96 /* Main.storyboard */,
+				5D70782C2EB449F400D71C96 /* Assets.xcassets */,
+				5D70782E2EB449F400D71C96 /* LaunchScreen.storyboard */,
+				5D7078312EB449F400D71C96 /* Info.plist */,
+				5D7078322EB449F400D71C96 /* main.m */,
+				7F1000032EDC000100B00001 /* script.sh */,
+				7F1000112EDC000100B00001 /* supports */,
+				7F1000042EDC000100B00001 /* README_MINIMAL.md */,
+			);
+			path = KFDRead;
+			sourceTree = "<group>";
+		};
+		7F1000112EDC000100B00001 /* supports */ = {
+			isa = PBXGroup;
+			children = (
+				7F1000052EDC000100B00001 /* Entitlements.plist */,
+			);
+			path = supports;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D70781C2EB449F300D71C96 /* KFDRead */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D7078362EB449F400D71C96 /* Build configuration list for PBXNativeTarget "KFDRead" */;
+			buildPhases = (
+				5D7078192EB449F300D71C96 /* Sources */,
+				5D70781A2EB449F300D71C96 /* Frameworks */,
+				5D70781B2EB449F300D71C96 /* Resources */,
+				5D7078392EB44CCD00D71C96 /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KFDRead;
+			productName = KFDRead;
+			productReference = 5D70781D2EB449F300D71C96 /* KFDRead.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D7078152EB449F300D71C96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					5D70781C2EB449F300D71C96 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 5D7078182EB449F300D71C96 /* Build configuration list for PBXProject "KFDRead" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D7078142EB449F300D71C96;
+			productRefGroup = 5D70781E2EB449F300D71C96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D70781C2EB449F300D71C96 /* KFDRead */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D70781B2EB449F300D71C96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D2C33A02EDC89FA00B07DC1 /* libchoma.dylib in Resources */,
+				5D2C33A12EDC89FA00B07DC1 /* libjailbreak.dylib in Resources */,
+				5D70782D2EB449F400D71C96 /* Assets.xcassets in Resources */,
+				5D7078302EB449F400D71C96 /* Base in Resources */,
+				5D70782B2EB449F300D71C96 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D7078392EB44CCD00D71C96 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/bash \"${SRCROOT}/KFDRead/script.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D7078192EB449F300D71C96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCDC12E2EDB26E0008CF0B9 /* kfd.mm in Sources */,
+				5D7078282EB449F300D71C96 /* ViewController.m in Sources */,
+				5D7078222EB449F300D71C96 /* AppDelegate.m in Sources */,
+				5D7078332EB449F400D71C96 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5D7078292EB449F300D71C96 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D70782A2EB449F300D71C96 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5D70782E2EB449F400D71C96 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D70782F2EB449F400D71C96 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D7078342EB449F400D71C96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5D7078352EB449F400D71C96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D7078372EB449F400D71C96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					arm64e,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RURNM8MZ2U;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KFDRead/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.net.KFDRead;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D7078382EB449F400D71C96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					arm64e,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RURNM8MZ2U;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KFDRead/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.net.KFDRead;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D7078182EB449F300D71C96 /* Build configuration list for PBXProject "KFDRead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D7078342EB449F400D71C96 /* Debug */,
+				5D7078352EB449F400D71C96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D7078362EB449F400D71C96 /* Build configuration list for PBXNativeTarget "KFDRead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D7078372EB449F400D71C96 /* Debug */,
+				5D7078382EB449F400D71C96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D7078152EB449F300D71C96 /* Project object */;
+}
