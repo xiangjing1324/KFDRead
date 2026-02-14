@@ -88,7 +88,7 @@ while IFS= read -r -d '' bin; do
   sign_if_macho "${bin}" || true
 done < <(find "${APP_DIR}" -type f \( -name "*.dylib" -o -path "*/Frameworks/*.framework/*" \) -print0 2>/dev/null || true)
 
-OUT_DIR="${SRCROOT}/packages"
+OUT_DIR="${SRCROOT}/KFDRead/packages"
 OUT_NAME="${PRODUCT_NAME}_${VERSION}_${BUILD_NO}.tipa"
 OUT_PATH="${OUT_DIR}/${OUT_NAME}"
 WORK_DIR="${TARGET_BUILD_DIR}/tipa_payload_tmp"
